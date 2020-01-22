@@ -8,9 +8,11 @@ syp = file.read()
 with open('robot.txt') as f:
     content = f.readlines()
 
+
+
 asteroid_list = []
 robots_list = []
-for i in range(0, len(content)-1):
+for i in range(0, len(content)):
     pp = json.loads(content[i])
     if pp["type"] == "asteroid":
         r = requests.get('https://www.uuidgenerator.net/api/guid')
