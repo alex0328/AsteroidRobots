@@ -1,30 +1,27 @@
-# BlackCow
 Robots on Asteroid
 
 Documentation:
 
-Please use pip install requirements.txt to insall 
-needed liberies.
+Please use pip install requirements.txt to 
+install needed libraries.
 
-App is using Flask - web framework to send final 
-output to api endpoint. 
+App is using Flask - web framework to 
+send final output to api endpoint.
 
-robot.txt - containes input data from satelite. 
-You can change file name, you will have to change variable name 
-in app.py "file". 
+robot.txt - contains input data from satellite. 
+You can change file name, you will have 
+to change variable name in app.py "file".
 
-cls.py:
-file contains classes Asteroid and Robot. 
+cls.py: file contains classes Asteroid and Robot.
 
-Asteroid is class for new asteroid, containes scope of 
-calculations.
-Robot - class for robot. Containes positions and methods:
-check_position - checking is robot is still in scoupe
-move_on - method is calling when robot moves
+Asteroid is class for new asteroid, 
+contains scope of calculations. Robot - class 
+for robot. Contains positions and methods: 
+check_position - checking is robot is still in 
+scope move_on - method is calling when robot moves
 
-app.py file:
-containes operationals functions:
-    index - Flask function:
+app.py file: contains operational functions: 
+index - Flask function: var file - name of text file with input
         var file - name of text file with input
         
         13 and 14 opening file and reading line by line
