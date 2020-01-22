@@ -30,36 +30,36 @@ class Robot:
     def move_on(self, direction):
         if direction == "turn-left":
             if self.bearing == "north":
-                self.position_x = self.position_x -1
-                self.bearing = "west"
+                self.position_x -= 1
+                self.bearing = "west" #1
             elif self.bearing == "south":
-                self.position_x = self.position_x +1
+                self.position_x += 1 #11
                 self.bearing = "east"
             elif self.bearing == "east":
-                self.position_y = self.position_y + 1
-                self.bearing = "north"
+                self.position_y += 1
+                self.bearing = "north" #111
             elif self.bearing == "west":
-                self.position_y = self.position_y - 1
+                self.position_y -= 1
                 self.bearing = "south"
         elif direction == "turn-right":
             if self.bearing == "north":
-                self.position_x = self.position_x +1
-                self.bearing = "east"
+                self.position_x += 1
+                self.bearing = "east" #22
             elif self.bearing == "south":
-                self.position_x = self.position_x -1
-                self.bearing = "west"
+                self.position_x -= 1
+                self.bearing = "west" #2
             elif self.bearing == "east":
-                self.position_y = self.position_y - 1
+                self.position_y -= 1
                 self.bearing = "south"
             elif self.bearing == "west":
-                self.position_y = self.position_y + 1
-                self.bearing = "north"
+                self.position_y += 1
+                self.bearing = "north" #222
         elif direction == "move-forward":
             if self.bearing == "north":
-                self.position_y = self.position_y +1
+                self.position_y += 1 #333
             elif self.bearing == "south":
-                self.position_y = self.position_y -1
+                self.position_y -= 1
             elif self.bearing == "east":
-                self.position_x = self.position_x + 1
+                self.position_x += 1 #33
             elif self.bearing == "west":
-                self.position_x = self.position_x - 1
+                self.position_x -= 1 #3
